@@ -1,3 +1,1428 @@
-a: 人
-b: 八
-c: 口
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>建成中文輸入法</title>
+    <link href="css/w3.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-2.2.1.min.js"></script>
+    <style type="text/css">
+    html {
+        font-family: "新細明體", "Times New Roman";
+        font-weight: normal;
+    }
+
+    nav ul {
+        list-style-type: none;
+    }
+
+    nav ul li {
+        display: inline-block;
+        background-color: #FAEBD7;
+        margin: 2px;
+        border-width: 2px;
+        border: solid green;
+    }
+
+    nav ul li a {
+        margin: 10px;
+        padding: 10px;
+        font-size: 1.5em;
+        text-decoration: none
+    }
+
+    nav ul li a:hover {
+        color: blue;
+    }
+
+    b {
+        color: #B22222;
+    }
+    </style>
+</head>
+
+<!--------------------------------------------------------------->
+<body>
+    <div style="margin:0; padding:0; border:0; width:100%">
+        <h2 style="text-align:center; padding:0.3em; background-color:#009900; color:white;">
+            建成中文輸入法
+            <button id="aa" class="w3-btn w3-lime  w3-large w3-right">
+                <a href="index_cn.html" style="text-decoration:none">簡體</a>
+            </button>
+        </h2>
+    </div>
+    <nav>
+        <ul>
+            <li>
+                <a href="exbn.html" target="_blank">字母鍵取碼練習</a>
+            </li>
+            <li>
+                <a href="exrn.html" target="_blank">字根碼取碼練習</a>
+            </li>
+            <li>
+                <a href="extn.html" target="_blank">輸入字取碼練習</a>
+            </li>
+            <li>
+                <a href="abv.html" target="_blank">關於</a>
+            </li>
+            <li>
+                <a href="mailto:ksintcom@ksinput.com">指教聯系</a>
+            </li>
+        </ul>
+    </nav>
+    <div style="display:" id="container">
+        <div style="font-size:1.4em; font-weight:normal; background-color:#90ee90; color:black; margin:0px; padding:4px;">
+            <h1 align="center" valign="center">
+                <b>這是家長給孩子們的最佳玩物!</b>
+            </h1>
+            <hr>
+            <ul>
+                <li>
+                《建成中文輸入法》是一款簡單易學、實用性極高的中文輸入工具，同時也是一款寓教於樂的益智電子遊戲。其設計理念兼顧了兒童、長者及初學中文的外籍人士，透過遊戲化的方式，引導使用者自然掌握中文輸入的邏輯與文字結構，尤其適合五歲以上兒童作為早教工具，以及長者用於提升認知活力。
+                </li>
+                <li>
+                《建成中文輸入法》以象形文字的原理為基礎，突破傳統輸入方式對拼音、拆碼或複雜記憶的依賴。使用者無需死記字根編碼，也不需要理解文字的語義，只需透過直觀的操作與有規律的邏輯，即可輕鬆實現中文輸入。在無壓力的使用過程中，孩子與長者能潛移默化地提升思考力、觀察力、想像力、專注力、分析判斷能力與語文理解力。
+                </li>
+                <li>
+                《建成中文輸入法》看似抽象，實則內在結構清晰明確，學習門檻低、入門快速，適合學校教育導入、醫療復健應用，亦可作為家庭學習與親子互動的工具。我們誠摯推薦家長陪同子女一同學習，不僅可增進親子關係，更能提升孩子的學習興趣、自信心、創造力與責任感。此工具亦有潛力預防與改善長者認知退化、兒童讀寫障礙等問題。
+                </li>
+                <li>
+                《建成中文輸入法》不僅是一種輸入工具，更是一種全齡化的學習與啟發平台，開啟中文教育與智能科技結合的新篇章。
+                </li>
+            </ul>
+            <h2 align="center" valign="center">
+                <b>立刻動動腦筋，齊齊學習26個《英文字母字根》，看看誰的記憶力最强吧!</b>
+            </h2>
+        </div>
+        <hr>
+        <!------------------------------------------------->
+        <!----------------------------------------------->
+        <table class="table" bgcolor="#32CD32" border="1" magin="0">
+            <thead align="center" valign="center" bgcolor="">
+                <tr align="center" valign="center">
+                    <th>
+                        <h3>建成英文字母字根碼</h3>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="pic/id3.png" width=100%>
+                        </img>
+                    </td>
+                </tr>
+            </tbody>
+            <table class="table table-striped" bgcolor="" border="1" magin="0">
+                <caption>
+                    <h2>建成字根圖表與取碼規定</h2>
+                </caption>
+                <thead align="center" valign="center" bgcolor="#32CD32">
+                    <tr align="center" valign="center">
+                        <th>
+                            <h3>建成字根圖表</h3>
+                        </th>
+                        <th>
+                            <h3>取碼規定</h3>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td <P style="font-size:1.2em;">
+                            ＆表示：可以是任何筆劃。</P>
+                            <P style="font-size:1em;">*表示：可以是任何筆劃(但不包括横劃或斜筆)，通常是圍型筆劃。</P>
+                            <img src="pic/id5.png" width=100%>
+                            </img>
+                        </td>
+                        <td>
+                            <img src="pic/id4.png" width=100%>
+                            </img>
+                        </td>
+                    </tr>
+
+                </tbody>
+                <<!---------------------------------------------------------->
+                <div style="margin:0; padding:0; border:0;">
+                    <h3 style="text-align:center; padding:0.3em; background-color:#009900; color:white;">建成中文輸入法取碼規定</h3>
+                    <div style="font-size:1.4em; font-weight:normal; background-color:#90ee90; color:black; margin:0px; padding:4px;">
+                        <!----------------------------------------------->
+                        <ul>
+                            <li type="square">
+                                <b>《建成中文輸入法》是以象形為主，總體是憑著感覺，無需强記，輸入多了自然學會，絶不會再忘記。</b>
+                                <br>
+
+                                《建成中文輸入法》是以
+                                <b>
+                                    中文字的《字塊底部》型態編碼。
+                                    <br>
+                                    由於中文字絕大部分為《排型字》，而《建成中文輸入法》在《排型字》上取碼是十分簡單明確，不會含糊不清，故此取碼判斷很容易。
+                                </b>
+                                <br>
+                                建議起初學習時，先以《排型字》輸入練習，從而熟記所有字根及字母，領略《建成中文輸入法》的輕鬆簡易使用，實在是最好的方法。
+                            </li>
+                            <li>
+
+                                《排型字》和《疊型字》的區分：
+                                <br>
+
+                                《排型字》註解：《排型字》的《字塊》就像多幢的樓房，一幢幢的由左至右一直排列開來。
+                                <br>
+                                舉例：[排]、[倒]、[撇]等字。
+                                <br>
+                            <li>
+
+                                《排型字》取碼規定：
+                                <br/>
+                                <b>由左至右分列取碼，是以《字塊底部》型態取碼。</b>
+                                如果只有一列《字塊》取一碼，兩列《字塊》時則取兩碼。三個排列以上《字塊》時，則取首列《字塊》和尾列《字塊》共兩碼。
+                                <br>
+
+                                《字塊》註解：《字塊》是由整個字中，區隔出來的一個或多個部份，即為《字的區塊》，《建成中文輸入法》是以《字塊底部》型態編輯成26個字根碼。
+                                <br>
+                                一個《字塊》是其筆劃互相連結併合而成，在「整個字」中，
+                                <b>如有另外的其它《字塊》，它們通常是互不接觸的。</b>
+                                <br>
+
+                            <li>
+
+                                《疊型字》註解：《疊型字》的《字塊》就像單一幢的樓房，從頂層由上而下一層一層的走下來。
+                                <br>
+                                舉例：[暈]、[辜]、[疊]等字。
+                                <br>
+
+                                《疊型字》取碼規定：
+                                <br/>
+                                <b>由上而下分層取碼，是以《字塊底部》型態取碼。</b>
+
+                                如果只有一層《字塊》取一碼，兩層《字塊》時則取兩碼。三個層次以上《字塊》時，則取首層《字塊》和尾層《字塊》共兩碼。
+                                <br>
+
+                                <!-------------------------------------------------------->
+
+                                《疊型字塊層》的計算：
+                                <b>是以《明顯分離的字塊》合共有多少來決定。</b>
+                                <br>
+                                <b>原則上是如果沒有《明顯分離的字塊》，就都只取單一碼。</b>
+                                <br>
+
+                                《明顯分離的字塊》註解：是兩個絕對不會接觸的《字塊》，通常是一些具有
+                                <b>橫線的《字塊》，由此構成兩條平行線互不接觸。</b>
+                                <BR>
+                                《明顯分離的字塊》舉例：兩個《圍型字塊》、兩個《橫型字塊》、《圍型字塊》+《橫型字塊》等，它們絕對不會接觸。
+                                <br>
+                                舉例：<回>取[QO]、<冒>取[QQ]、<貴>取[DZ]、<宜>取[MD]、<黃>取[OZ]等。
+                                <br>
+                            <li type="square">
+
+                                《疊型字》雖然佔比較少，但因中文字體設計上的問題，有時會有點上下《字塊》混亂不清，要區分上下兩部分的《字塊》，必須有明確的規定，習慣取碼的統一性，以免產生不明確的取碼。
+                                <br>
+
+                            </li>
+                            <li id="rnf">
+
+                                其中有三四個《字塊》是有點跨越界限，就是《夕：Y》、《弋：V》和《之：G》、《又：X》等字根。
+                                <br>
+
+                                《夕：Y》、《弋：V》等字根，通常都位於字的頂部，因此有此《字塊》在頂部都規定為《疊型字》，為《疊型字塊層》是《必取首碼》。
+                                <br>
+
+                                舉例：<塵>取[YC]、<層>取[YQ]、<盧>取[YD]、<感>取[VU]、<載>取[VT]等字。
+                                <br>
+
+                                《之：G》、
+                                <b>《又：X》</b>
+                                等字根，俗稱《撐艇仔》，通常都位於字的底部，因此有此《字塊》在底部，都規定為《排型字》，為《最優先必取首碼》，比任何《字塊》更優先取碼。
+                                <br>
+
+                                舉例：<蓮>取[GT]、<逢>取[GF]、<避>取[GT]、
+                                <b>
+                                    <建>取[XF]、<麵>取[XQ]等字。
+                                </b>
+                                <br>
+
+                                《最優先必取首碼》註解：[H：廾]俗稱《草花頭》，為《必取首碼》，但[之：G]俗稱《撐艇仔》為《排型字》，由於《排型字》優先《疊型字》取碼，因此，<蓮>取[GT]，不取[HG]。
+                                <br>
+                            </li>
+                            <b>
+                                有關《疊型字塊層》和《必取首碼》詳細閱覽：
+                                <a href="#nf">《必取首碼》</a>
+                            </b>
+                            <!---------------------------------------------------------------->
+                            </li>
+
+                    </div>
+
+                    <!---------------------------------------------------------------------->
+
+                    <table bgcolor="" border="1" magin="0" padding="0" style="width :100%;">
+                        <caption>
+                            <h2>《建成中文輸入法》字根分類</h2>
+                        </caption>
+                        <thead align="center" valign="center" bgcolor="#32CD32">
+                            <tr align="center" valign="center">
+                                <th width="10%">
+                                    <h3>分類</h3>
+                                </th>
+                                <th width="90%">
+                                    <h3>說明</h3>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td width="10%" rowspan="2" align="center" valign="center" bgcolor="#ADFF2F">
+                                    <h1>似</h1>
+                                </td>
+                                <td width="90%">
+                                    <h3>是相反或相似的字塊。</h3>
+                                </td>
+                            </tr>
+                            <tr align="center" valign="center">
+                                <td>
+                                    <h3>有4種分類：</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">
+                                    <a name="似_1">
+                                        <nobr>(1) 《八：Z》</nobr>
+                                    </a>
+                                </td>
+                                <td>兩個相似字塊但方向相反。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>八、非、門、北、鬥、等字。</td>
+                            </tr>
+
+                            <tr>
+                                <td align="center">請參考：</td>
+                                <td>
+                                    往下另有明確界定八和人的分別，閱覽：
+                                    <a href="#斜_3">
+                                        <斜型(3)>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">(2) 《二：S》</td>
+                                <td>有兩個相似的字塊。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>二、多、羽、圭、哥、竹、比、冫、辡、刂、等字。</td>
+                            </tr>
+
+                            <tr>
+                                <td align="center">留意：</td>
+                                <td>
+                                    <丨>直筆和<亅>向左的鉤是等同的。例如：楷書體的和明書體的<示>、<竹>等字，一個有左鉤另一個是沒有鉤的。所以向左的鉤是不用理會的，都看作直筆來取碼。
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">另外：</td>
+                                <td>
+                                    <哥>字是兩個<可>，取《二：S》碼。而<出>字是兩個<山>由一直筆相連的字，取<山 ： U>
+                                    碼。可以從書寫法上明顯分辨出不同，故取碼不同。
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td align="left" valign="top">
+                                    <nobr>(3) 《三：W》</nobr>
+                                </td>
+                                <td>有三個相似的字塊。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>三、品、州、森、等字。</td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">
+                                    <nobr>
+                                        <a name="似_4">(4) 《無&豕：N》</a>
+                                    </nobr>
+                                </td>
+                                <td>
+                                    有四個或更多相似的字塊，有所謂N咁多個。字根碼<無>和<豕>共用字母- N 。<豕>參考：
+                                    <a href="#缺_5">
+                                        <缺類(5)>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>馬、魚、鳥、灬、等字的四點水。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">留意：</td>
+                                <td>
+                                    有關動物部首的字塊，如魚、馬、鳥等字，這些疊型字都只需取一碼。閱覽：
+                                    <a href="#nfm">《不取首碼筆劃》
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">留意：</td>
+                                <td>
+                                    相似字塊在同一層時，同一視平線下，很容易看清楚多少個，例如：<變>字有兩個<絲>，雖然隔著<言>字，但可以一眼看清楚是兩個相似字塊，故有一個其他字塊隔開也都計算，所以<變>字取<二又 ： SX>兩碼。
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">留意：</td>
+                                <td>
+                                    相似字塊有其他字塊隔開，分散在上中下方時，需顧及範圍太大，會影響思考速度是不宜合計。例如：<薑>字有三個<一>兩個<田>，視線由上而下，有阻隔是不易計算的，故不會合計相似字塊，只需簡單選取底部的<一 ： D>碼。草花頭《廾：H》在《建成中文輸入法》中是必取碼，無需理會是否與下邊字塊相聯，凡有草花頭的疊字都是必選取碼。所以<薑>字取<廾一 ： HD>兩碼。而<器>字會取<二二 ： SS>不取<無大 ： NB>碼。
+                                </td>
+                                <!------------------------------------------------------------------->
+                            <tr>
+                                <td align="center" valign="center">
+                                    <h3>輸入舉例：</h3>
+                                </td>
+                                <td valign="center">
+                                    <h2>
+                                        <nobr>《潺-WW弱-S 》</nobr>
+                                        <nobr>《滋-WS潤-WZ》</nobr>
+                                        <nobr>《森-W 林-S 》</nobr>
+                                        <nobr>《絲-S 蠶-SS》</nobr>
+                                        <nobr>《漁-WN翁-ZS》</nobr>
+                                        <nobr>《關-ZZ門-Z 》</nobr>
+                                        <nobr>《非-Z 洲-WW》</nobr>
+                                        <nobr>《三-W 哥-S 》</nobr>
+                                        <nobr>《無-N 比-S 》</nobr>
+                                        </nobr>
+                                        <nobr>《測-WS驗-NS》</nobr>
+                                    </h2>
+                                </td>
+                            </tr>
+
+                            <!-----------------------------圍------------------------------------>
+
+                            <tr>
+                                <td width="10%" rowspan="2" align="center" valign="center" bgcolor="#ADFF2F">
+                                    <h1>圍</h1>
+                                </td>
+                                <td width="90%">
+                                    <h3>是圍合的字塊</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <h3>有2種分類：</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="10%" align="left" valign="top">
+                                    <a name="圍_1">(1) 《口：O》</a>
+                                </td>
+                                <td>底部是圍合字塊，而且內裡是中空没有筆劃。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>口、古、廿、凹、凸、等字。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">留意：</td>
+                                <td>
+                                    由於口部字根首碼重複字太多，故此<言>不取<口： O>改借取用<大 ： B>作為字根碼(記法：大言不慚)。參考：
+                                    <a href="#斜_4">
+                                        <斜類(4)>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">(2) 《日：Q》</td>
+                                <td>底部是圍合字塊，而且內裡是有筆劃。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>日、目、西、母、匃、等字。</td>
+                            </tr>
+                            <!------------------------------------------------------------>
+                            <!--tr width=100%><th align=center clspan=4>輸入舉例</th></tr>
+                            <tr width=25%><th>《翻：QS面：Q 》</th><th>《潛：WQ回：QO》</th><th>《磁：OS石：O 》</th><th>《品：W 嚐：OQ》</th></tr-->
+                            <!---------------------------<nobr>《-N-S》</nobr>-------------------------------------------------->
+                            <tr>
+                                <td align="center" valign="center">
+                                    <h3>輸入舉例：</h3>
+                                </td>
+                                <td valign="center">
+                                    <h2>
+                                        <nobr>《翻-QS面-Q 》</nobr>
+                                        <nobr>《潛-WQ回-QO》</nobr>
+                                        <nobr>《磁-OS石-O 》</nobr>
+                                        <nobr>《品-W 嚐-OQ》</nobr>
+                                        <nobr>《咖-OO啡-OZ》</nobr>
+                                        <nobr>《甜-OQ醋-QQ》</nobr>
+                                        <nobr>《喝-OQ酒-WQ》</nobr>
+                                        <nobr>《答-SO辯-SB》</nobr>
+                                        <nobr>《點-NO唱-OS》</nobr>
+                                        <nobr>《油-WQ箱-SQ》</nobr>
+                                        <nobr>《沿-WO海-WQ》</nobr>
+                                        <nobr>《凹-O 凸-O 》</nobr>
+                                        <nobr>《日-Q 曬-QS》</nobr>
+                                    </h2>
+                                </td>
+                            </tr>
+
+                            <!------------------------------橫------------------------------------->
+
+                            <tr>
+                                <td width="10%" rowspan="2" align="center" valign="center" bgcolor="#ADFF2F">
+                                    <h1>橫</h1>
+                                </td>
+                                <td width="90%">
+                                    <h3>底部是橫劃的字塊</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <h3>有4種分類：</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <nobr>(1) 《一&虫：D》</nobr>
+                                </td>
+                                <td>
+                                    字塊底部是一橫劃，没有其他由直筆相通的橫劃(圍型內或圍型隔離的橫劃不會計算)。字根碼<一>和<虫>共用字母- D 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>一、且、亠、血、亞、互、等字。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">留意：</td>
+                                <td>最底部的一橫劃要完整。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">另外：</td>
+                                <td>字塊底部或右底部是一點(一點及一劃相同取碼)。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>虫、去、厶、幺、等字。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">留意：</td>
+                                <td>
+                                    單獨一點在《建成中文輸入法》中是不需要理會，不會取碼。例如：<大><犬><太>都只會輸入<大 ： B>一碼。
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">(2) 《工：C》</td>
+                                <td>字塊底部是一橫劃，及有由直筆相通的第二筆橫劃(圍型內或圍型隔離的橫劃不會計算)。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>工、里、上、丘、壬、重、等字。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">留意：</td>
+                                <td>除了最底部的一橫劃要完整，之上的可以只是半劃。例如：上、丘、等。</td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">(3) 《王：E》</td>
+                                <td>字塊底部是一橫劃，及有由直筆相通的第三筆或更多筆的橫劃(圍型內或圍型隔離的橫劃不會計算)。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>王、生等字。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">留意：</td>
+                                <td>除了最底部的一橫劃要完整，之上的可以只是半劃。例如：丑、正、彐、等。</td>
+                            </tr>
+                            <!---------------------------<nobr>《-N-S》</nobr>-------------------------------------------------->
+                            <tr>
+                                <td align="center" valign="center">
+                                    <h3>輸入舉例：</h3>
+                                </td>
+                                <td valign="center">
+                                    <h2>
+                                        <nobr>《珍-EW重-C》</nobr>
+                                        <nobr>《站-DO立-D》</nobr>
+                                        <nobr>《踐-CS踏-CQ》</nobr>
+                                        <nobr>《丑-E生-E》</nobr>
+                                        <nobr>《垂-E注-WE》</nobr>
+                                        <nobr>《馬-N上-C》</nobr>
+                                        <nobr>《亞-D洲-WW》</nobr>
+                                        <nobr>《彗-SE星-E》</nobr>
+                                        <nobr>《鑼-EE鏟-EE》</nobr>
+                                        <nobr>《睡-QE醒-QE》</nobr>
+                                        <nobr>《書-EQ畫-ED》</nobr>
+                                        <nobr>《豔-DD麗-SS》</nobr>
+                                        <nobr>《生-E活-WO》</nobr>
+                                        <nobr>《雌-CE雄-DE》</nobr>
+                                    </h2>
+                                </td>
+                            </tr>
+
+                            <!-------------------------------直+橫--------------------------------------->
+
+                            <tr>
+                                <td width="10%" rowspan="2" align="center" valign="center" bgcolor="#ADFF2F">
+                                    <h1>直+橫</h1>
+                                </td>
+                                <td>
+                                    <h3>底部是直筆和橫劃的字塊</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <h3>有4種分類：</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <a name="直_1">(1) 《丁&刀：J》</a>
+                                </td>
+                                <td>
+                                    字塊底部是一直筆，向上延伸最先相連的，是頂部的一橫劃(圍型內或圍型隔離的橫劃不會計算)。字根碼<丁>和<刀>共用字母- J 。<刀>參考：
+                                    <a href="#缺_2">
+                                        <缺類(2)>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>丁、予等字。</td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">(2) 《十：T》</td>
+                                <td>字塊底部是一直筆，向上延伸而未到頂部前，最先相連的是中間的一橫劃(圍型內或圍型隔離的橫劃不會計算)。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>十、車、午、子、孑、本、等字。</td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">(3) 《牛：F》</td>
+                                <td>字塊底部是一直筆，向上延伸而未到頂部前，最先相連的有兩筆或更多的橫劃(圍型內或圍型隔離的橫劃不會計算)。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>牛、承、事、扌、等字。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">留意：</td>
+                                <td>直筆之上的横劃可以只是半劃。例如：、年、乍、等。</td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">(4) 《中：I》</td>
+                                <td>字塊底部是一直筆，可以不附有任何筆劃，或向上延伸最先相連的是《橫劃或斜筆以外》的任何筆劃(不是橫劃或斜筆)。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>中、甲、巾、弔、了、丨、亅、阝、卩、丩、丫、忄、等字。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">留意：</td>
+                                <td>
+                                    <忄>不取<小>因在楷書會寫作近似<丩>故統一取《中：I》碼。
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">特別留意：</td>
+                                <td>
+                                    <丨>直筆和<亅>向左的鉤是等同的，因為很多的字，在不同的字體時，可能都會有混亂。例如：楷書體的和明書體的<示>、<竹>等字，一個有左鉤另一個是沒有鉤的。所以向左的鉤是不用理會的，都看作直筆來取碼。
+                                </td>
+                            </tr>
+                            <!---------------------------<nobr>《-N-S》</nobr>-------------------------------------------------->
+                            <tr>
+                                <td align="center" valign="center">
+                                    <h3>輸入舉例：</h3>
+                                </td>
+                                <td valign="center">
+                                    <h2>
+                                        <nobr>《幫-TI手-F》</nobr>
+                                        <nobr>《丢-D掉-FT》</nobr>
+                                        <nobr>《陣-IT間-ZQ》</nobr>
+                                        <nobr>《忖-IT測-WS》</nobr>
+                                        <nobr>《抑-FI鬱-SW》</nobr>
+                                        <nobr>《揮-FT舞-EF》</nobr>
+                                        <nobr>《博-TT士-C》</nobr>
+                                        <nobr>《圍-QF堵-CQ》</nobr>
+                                        <nobr>《畸-QJ型-SC》</nobr>
+                                        <nobr>《昨-QF日-Q》</nobr>
+                                        <nobr>《拍-FQ子-T》</nobr>
+                                        <nobr>《瞬-QF時-QT》</nobr>
+                                        <nobr>《憔-IN悴-IT》</nobr>
+                                        <nobr>《打-FJ工-C》</nobr>
+                                        <nobr>《羊-F群-OF》</nobr>
+                                        <nobr>《阻-ID擋-FQ》</nobr>
+                                    </h2>
+                                </td>
+                            </tr>
+
+                            <!------------------------------斜----------------------------------------->
+
+                            <tr>
+                                <td width="10%" rowspan="2" align="center" valign="center" bgcolor="#ADFF2F">
+                                    <h1>斜</h1>
+                                </td>
+                                <td>
+                                    <h3>底部是撇與捺的字塊</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <h3>有5種分類：</h3>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">(1) 《夕：Y》</td>
+                                <td>底部是撇的字塊。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>夕、少、疒、乡、厂、戶、厃、等字。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">留意：</td>
+                                <td>
+                                    在疊型字中，如<疒、厂、戶、厃、>等，撇型區塊位於在頂部的最左邊，其右邊佔據整個頂部，則是優先選的首碼。例如：<歷>取<夕工 ： YC>碼。<慰>由於撇型區塊，其右邊不是佔據整個頂部，則取<十山 ： TU>碼。
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">
+                                    <nobr>
+                                        <a name="斜_2">(2) 《之&己：G》</a>
+                                    </nobr>
+                                </td>
+                                <td>
+                                    底部是捺的字塊。字根碼<之>和<己>共用字母- G 。<己>參考：
+                                    <a href="#鉤_2">
+                                        <鉤類(2)>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>之、辶等字。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">留意：</td>
+                                <td>
+                                    <辶和廴>部首，是必要先選的首碼，比較草花頭《廾：H》更優先。例如：<蓮>取<之十 ： GT>碼、<蓬>取<之牛 ： GF>碼。
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">
+                                    <a name="斜_3">(3) 《人：A》</a>
+                                </td>
+                                <td>底部是撇和捺的字塊，其頂部是相連在一起的。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>入、久、疋、走、夷、臾、尺等字。</td>
+                            </tr>
+
+                            <tr>
+                                <td align="center">留意：</td>
+                                <td>
+                                    《人：A》的撇和捺大多是合併的，長短比較上通常會有些微分別，是有邊長有邊短的感覺。而《八：Z》大多是分開的，通常在<横劃或圍型>字塊的底下，撇和捺的長短比較上是不會有明顯的分別，長度會比較《人：A》更短小，通常會和<横劃或圍型>字塊合併取《八：Z》碼。<八>參考：
+                                    <a href="#似_1">
+                                        <似類(1)></</td>
+                            </tr>
+
+                            <tr>
+                                <td align="left" valign="top">
+                                    <a name="斜_4">(4) 《大&言：B》</a>
+                                </td>
+                                <td>
+                                    底部是撇和捺的字塊，中部有一筆或更多的橫劃。字根碼<大>和<言>共用字母< B >。<言>參考：
+                                    <a href="#圍_1">
+                                        <圍類(1)>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>大、夫、央、矢、夭、等字。</td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">(5) 《又：X》</td>
+                                <td>底部是撇和捺相交的字塊。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>又、更、及、史、丈、反、廴、等字。</td>
+                            </tr>
+                            <!----------------------------------------------------------------------------->
+                            <tr>
+                                <td align="center" valign="center">
+                                    <h3>輸入舉例：</h3>
+                                </td>
+                                <td valign="center">
+                                    <h2>
+                                        <nobr>《歷-YC史-X》</nobr>
+                                        <nobr>《丈-X夫-B》</nobr>
+                                        <nobr>《妻-X妾-X》</nobr>
+                                        <nobr>《犬-B隻-EX》</nobr>
+                                        <nobr>《太-B好-XT》</nobr>
+                                        <nobr>《煥-AB然-BN》</nobr>
+                                        <nobr>《中-I央-B》</nobr>
+                                        <nobr>《參-WW與-Z》</nobr>
+                                        <nobr>《更-X正-E》</nobr>
+                                        <nobr>《失-B言-B》</nobr>
+                                        <nobr>《讉-BG-責EZ》</nobr>
+                                        <nobr>《警-XB告-CO》</nobr>
+                                        <nobr>《欠-YA錢-ES》</nobr>
+                                        <nobr>《委-X員-OZ》</nobr>
+                                        <nobr>《合-AO共-Z》</nobr>
+                                        <nobr>《謎-BG語-BO》</nobr>
+                                        <nobr>《夏-QX天-B》</nobr>
+                                        <nobr>《遺-GZ產-XE》</nobr>
+                                        <nobr>《真-Z理-EC》</nobr>
+                                        <nobr>《超-AO人-A》</nobr>
+                                        <nobr>《美-B妙-XY》</nobr>
+                                        <nobr>《頭-DZ皮-X》</nobr>
+                                        <nobr>《奠-B基-ZC》</nobr>
+                                        <nobr>《欺-ZA凌-SX》</nobr>
+                                    </h2>
+                                </td>
+                            </tr>
+                            <!-------------------------------直+斜----------------------------------->
+
+                            <tr>
+                                <td width="10%" rowspan="2" align="center" valign="center" bgcolor="#ADFF2F">
+                                    <h1>直+斜</h1>
+                                </td>
+                                <td>
+                                    <h3>底部是直筆加上撇與捺的字塊</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <h3>有3種分類：</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">(1) 《卜：K》</td>
+                                <td>底部是一直筆左邊有撇的字塊，或底部是一直筆右邊有捺的字塊。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>卜、牙、身、卞、卡、矛、才、亻、彳、等字。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">留意：</td>
+                                <td>
+                                    <才>字是撇和<扌>部首是剔，有所不同；剔和劃是等同的，所以<扌>是取《牛：F》碼。
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">(2) 《小：L》</td>
+                                <td>底部是直筆加上撇和捺的字塊。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>
+                                    小、不、水、衤、糸、糹、等字。留意：<糸><糹>是等同的。
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">(3) 《木：P》</td>
+                                <td>
+                                    底部是直筆還有橫劃在撇和捺的上面，在頂部的橫劃不計算(留意：<不>字是取《小：L》碼)。
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>木、未、朱、隶、等字。</td>
+                            </tr>
+                            <!---------------------------<nobr>《-N-S》</nobr>-------------------------------------------------->
+                            <tr>
+                                <td align="center" valign="center">
+                                    <h3>輸入舉例：</h3>
+                                </td>
+                                <td valign="center">
+                                    <h2>
+                                        <nobr>《存-KT在-KC》</nobr>
+                                        <nobr>《姊-XK弟-K》</nobr>
+                                        <nobr>《題-AZ外-YK》</nobr>
+                                        <nobr>《你-KL們-KZ》</nobr>
+                                        <nobr>《褓-LP姆-XQ》</nobr>
+                                        <nobr>《俊-KX傑-KP》</nobr>
+                                        <nobr>《材-PK料-PT》</nobr>
+                                        <nobr>《裸-LP泳-WL》</nobr>
+                                        <nobr>《條-KP款-LA》</nobr>
+                                        <nobr>《樓-PX梯-PK》</nobr>
+                                        <nobr>《奴-XX隸-LP》</nobr>
+                                        <nobr>《柔-KP和-PO》</nobr>
+                                        <nobr>《往-KE來-PS》</nobr>
+                                        <nobr>《剩-PS下-K》</nobr>
+                                        <nobr>《裙-LO褂-LK》</nobr>
+                                        <nobr>《介-AS紹-LO》</nobr>
+                                        <nobr>《躲-KP進-GE》</nobr>
+                                        <nobr>《綵-LP球-EP》</nobr>
+                                        <nobr>《夥-PS伴-KF》</nobr>
+                                        <nobr>《棚-PS架-OP》</nobr>
+                                    </h2>
+                                </td>
+                            </tr>
+
+                            <!------------------------------------------------------------------->
+                            <!-------------------------------缺---------------------------------->
+
+                            <tr>
+                                <td width="10%" rowspan="2" align="center" valign="center" bgcolor="#ADFF2F">
+                                    <h1>缺</h1>
+                                </td>
+                                <td>
+                                    <h3>是圍攏而有缺口的字塊</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <h3>有5種分類：</h3>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">(1) 《月：M》</td>
+                                <td>底部是缺口向下的字塊，兩個上圍外邊呈角狀。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>月、用、而、冖、宀、肖、等字。</td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">
+                                    <a name="缺_2">
+                                        <nobr>(2) 《刀&丁：J》</nobr>
+                                    </a>
+                                </td>
+                                <td>
+                                    <刀>：底部是缺口向下的字塊，只有右上圍外邊呈角狀，另外一邊不呈角狀。字根碼<刀>和<丁>共用字母- J 。<丁>參考：
+                                    <a href="#直_1">
+                                        <直+橫類(1)>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>刀、乃、勿、禺、弓、考、勹、片等字。</td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">(3) 《廾：H》</td>
+                                <td>底部是缺口向下的字塊，兩個上圍外邊都並不呈角狀。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>廾、再、丹、斤、弗、肅、赤、井、并、等字。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">留意：</td>
+                                <td>
+                                    草花頭<廾 ： H>在《建成中文輸入法》中是必取碼，無需理會是否與下邊字塊相聯，凡有草花頭的疊字都是必選取碼。
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">
+                                    <a name="缺_4">(4) 《山&乙：U》</a>
+                                </td>
+                                <td>
+                                    底部是缺口向上的字塊。字根碼<山>和<乙>共用字母- U 。<乙>參考：
+                                    <a href="#鉤_1">
+                                        <鉤類(1)>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>山、臼、凵、等字。</td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">
+                                    <a name="缺_5">
+                                        <nobr>(5) 《豕&無：N》</nobr>
+                                    </a>
+                                </td>
+                                <td>
+                                    象形動物的字塊，底部是彎曲成拱起的字塊，通常是彎曲身體向前傾的象形動物的字塊，及有關動物的字。字根碼<豕>和<無>共用字母- N 。<無>參考：
+                                    <a href="#似_4">
+                                        <似類(4)>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>象、豕、等字。</td>
+                            </tr>
+                            <!---------------------------<nobr>《-N-S》</nobr>-------------------------------------------------->
+                            <tr>
+                                <td align="center" valign="center">
+                                    <h3>輸入舉例：</h3>
+                                </td>
+                                <td valign="center">
+                                    <h2>
+                                        <nobr>《家-MN訪-BJ》</nobr>
+                                        <nobr>《憑-NU據-FN》</nobr>
+                                        <nobr>《嶄-UH新-PH》</nobr>
+                                        <nobr>《肚-MC臍-MH》</nobr>
+                                        <nobr>《毅-NX力-J》</nobr>
+                                        <nobr>《考-J勤-EJ》</nobr>
+                                        <nobr>《茅-HK蘆-HD》</nobr>
+                                        <nobr>《藝-HD術-KJ》</nobr>
+                                        <nobr>《受-MX傷-KJ》</nobr>
+                                        <nobr>《仍-KJ舊-HU》</nobr>
+                                        <nobr>《齣-UJ劇-NS》</nobr>
+                                        <nobr>《舅-UJ父-ZX》</nobr>
+                                        <nobr>《貓-NQ狗-NJ》</nobr>
+                                        <nobr>《為-N何-KJ》</nobr>
+                                        <nobr>《收-IX費-HZ》</nobr>
+                                        <nobr>《獲-NX取-TX》</nobr>
+                                        <nobr>《狡-NX猾-NM》</nobr>
+                                        <nobr>《政-EX黨-MN》</nobr>
+                                        <nobr>《防-IJ彈-JT》</nobr>
+                                        <nobr>《獨-NJ當-MQ》</nobr>
+                                    </h2>
+                                </td>
+                            </tr>
+                            <!------------------------------鉤--------------------------------->
+
+                            <tr>
+                                <td width="10%" rowspan="2" align="center" valign="center" bgcolor="#ADFF2F">
+                                    <h1>鉤</h1>
+                                </td>
+                                <td>
+                                    <h3>底部是向右鉤的字塊</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <h3>有4種分類：</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">
+                                    <a name="鉤_1">(1) 《乙&山：U》</a>
+                                </td>
+                                <td>
+                                    底部是向右呈U形鉤的字塊，起始部分可以没有筆劃或附帶《撇筆或橫劃》。字根碼<乙>和<山>共用字母- U 。<山>參考：
+                                    <a href="#缺_4">
+                                        <缺類(4)>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>乙、亡、七、世、也、甚、匚、等字。</td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">
+                                    <a name="鉤_2">(2) 《己&之：G》</a>
+                                </td>
+                                <td>
+                                    底部是向右呈U形鉤的字塊，起始部分向上延伸而未到頂部前，最先相連的是《橫劃或斜筆》以外的任何筆劃(不是橫劃或斜筆)。字根碼<己>和<之>共用字母- G 。<之>參考：
+                                    <a href="#斜_2">
+                                        <斜類(2)>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>
+                                    己、臣、屯、甩、等字。註解：<臣、巨>等字因為起始部分有圍型筆劃，則頂部橫劃被阻隔不計算。
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">(3) 《戈：V》</td>
+                                <td>底部是向右的直鉤或斜鉤字塊，可附帶任何筆劃(優先於直、橫、斜筆劃)。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">留意：</td>
+                                <td>
+                                    <丨>直筆和<亅>向左的鉤是等同的，因為很多的字，在不同的字體時，可能都會有混亂。例如：楷書體的和明書體的<示>、<竹>等字，一個有左鉤另一個是沒有鉤的。所以向左的鉤是不用理會的，都看作直筆來取碼。
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>戈、弋、我、民、衣、瓜、艮、等字。</td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">
+                                    <a name="鉤_4">(4) 《几：R》</a>
+                                </td>
+                                <td>底部是左撇和右鉤字塊(優先於直鉤、右鉤筆劃)。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">例如：</td>
+                                <td>几、九、兄、見、兀、尤、必、瓦、等字。</td>
+                            </tr>
+                            <tr>
+                                <td align="center">註解：</td>
+                                <td>
+                                    尤字取<几 ： R>碼；老字取<乙&山 ： U>碼，理由在底部平與不平，撇與鉤是否一齊平過。另外，左撇及右鉤要最簡單，不可以繁複，如：夕己等，不會選打<几 ： R>碼。故<宛>是不會選打<月几 ： MR>碼，簡單取右邊<己>字塊，選打<月己 ： MG>碼，可免打字時顧及範圍太大，影響思考速度。
+                                </td>
+                            </tr>
+                            <!---------------------------<nobr>《-N-S》</nobr>-------------------------------------------------->
+                            <tr>
+                                <td align="center" valign="center">
+                                    <h3>輸入舉例：</h3>
+                                </td>
+                                <td valign="center">
+                                    <h2>
+                                        <nobr>《龍-MU蛇-DU》</nobr>
+                                        <nobr>《龜-G兔-R》</nobr>
+                                        <nobr>《感-VU覺-MR》</nobr>
+                                        <nobr>《怨-GU恨-IV》</nobr>
+                                        <nobr>《必-WR備-KM》</nobr>
+                                        <nobr>《製-SV成-V》</nobr>
+                                        <nobr>《饒-VR恕-OU》</nobr>
+                                        <nobr>《虎-YR豹-NJ》</nobr>
+                                        <nobr>《袋-VV鼠-UV》</nobr>
+                                        <nobr>《切-VJ記-BG》</nobr>
+                                        <nobr>《飢-VR餓-VV》</nobr>
+                                        <nobr>《逃-GR跑-CG》</nobr>
+                                        <nobr>《誠-BV懇-VU》</nobr>
+                                        <nobr>《瓦-R片-J》</nobr>
+                                        <nobr>《斬-TH斷-UH》</nobr>
+                                        <nobr>《寵-MU物-FJ》</nobr>
+                                        <nobr>《食-AV飽-VG》</nobr>
+                                        <nobr>《既-VR然-BN》</nobr>
+                                        <nobr>《襲-UV擊-XF》</nobr>
+                                        <nobr>《退-GV還-GV》</nobr>
+                                        <nobr>《流-WR氓-UV》</nobr>
+                                    </h2>
+                                </td>
+                            </tr>
+                            <!------------------------------------------------------------------->
+                        </tbody>
+                    </table>
+                </div>
+                <div style="margin:0; padding:0; border:0;" class="container">
+                    <h2 style="text-align:center; padding:0.1em; background-color:#009900; color:white;">總結</h2>
+                    <div style="font-size:1.4em; font-weight:normal; background-color:#90ee90; color:black; margin:0px; padding:4px;">
+                        <ul>
+                            <li id="nf" type="square">
+                                <b>《疊型字》的層數，又稱為《間隔分離層》計算，共有五種類型：</b>
+                                特別留意《間隔分離層》如在第一層都是《必取碼》，它的作用是減少重碼字，相等於《明顯分離的字塊》。
+                            </li>
+                            <BR>
+                            <ol>
+
+                                《疊型字》的《間隔分離層》計算，共有五種類型：
+                                <li>
+                                    <b>一層內有兩個以上的《字塊》</b>
+                                    。
+                                    <br>
+
+                                    同一層內有兩個以上
+                                    <b>相似</b>
+                                    的《字塊》。
+                                    <br>
+                                    例如：[S：二]俗稱《竹花頭》等。
+                                    <br>
+                                    舉例：<等>取[ST]、<楚>取[SA]<轡>取[SO]等字。
+                                    <br>
+
+                                    例如：[H：廾]俗稱《草花頭》。
+                                    <br>
+                                    舉例：<華>取[HF]、<花>取[HU]等字。
+                                    <br>
+
+                                    同一層內有兩個以上
+                                    <B>不同</B>
+                                    的《字塊》，取右邊《字塊》。
+                                    <br>
+                                    舉例：<隼>取[T]、<準>取[ET]、<呆>取[P]、<架>取[OP]、<負>取[Z]、<貿>取[JZ]、<想>取[QU]、<幫>取[TI]、<幾>取[SV]、<武>取[VC]等字。
+                                    <BR>
+                                    如《間隔分離層》於
+                                    <B>第二層</B>
+                                    時，
+                                    <B>上層為《必取首碼》</B>
+                                    。
+                                    <br>
+
+                                    舉例：<雍>取[DE]、<齊>取[DH]、<率>取[DT]、<羅>取[QE]、<昂>取[QI]、<晷>取[QO]、<罰>取[QS]、<昆>取[QS]等字。
+                                    <br>
+                                    舉例：<哀><衰>取[DV]、<曇>取[QD]、<冒>取[QQ]等字。
+                                    <br>
+                                </li>
+                                <!----------------------------------->
+                                <li>
+                                    <b>《圍型字塊》是《必取首碼》</b>
+                                    ，除非下層為
+                                    <B>《聯接字根》</B>
+                                    。
+                                    <br>
+                                    《聯接字根》註解：即由
+                                    <B>「頂上部」以單一筆劃逹至「底下部」</B>
+                                    的一個字根，如有則
+                                    <B>不會取《圍型字塊》</B>
+                                    ，而聯接成單一個字。
+                                    <br>
+                                    《聯接字根》舉例：例如：[木]、[生]、[儿]、[八]、[人]、[灬]、[女]、[大]、[七]、[寸]等筆劃。
+                                    <br>
+                                    <b>不取《圍型字塊》</b>
+                                    舉例：<見>取[R]、<晁>取[R]、<早>取[T]、<星>取[E]、<要>取[X]、<呆>取[木]、<兄>取[R]、<只>取[Z]、<皂>取[U]、<貝>取[Z]、<尊>取[T]、<煮>取[N]理由下層為《聯接字根》，聯接成單一個字，只取單一碼。
+                                    <br>
+                                    <b>必取《圍型字塊》</b>
+                                    舉例：<夏>取[QX]、<罩>取[QT]、<晃>取[QR]、<睪>取[QT]、<冕>取[QR]、<曷>取[QQ]、<暴>取[QL]、<皋>取[QT]、<異>取[QZ]、<辜>取[OT]、<界>取[QS]理由下層不是《聯接字根》，而《圍型字塊》是《必取首碼》，如取兩碼時，《圍型字塊》是《必取首碼》。
+                                    <br>
+                                    留意：[戈]不是《聯接字根》，因其右上邊一定附帶有一逗點在上，故被定義為《間隔分離層》，會先取
+                                    <B>上層碼</B>
+                                    。
+                                    <br>
+                                    舉例：<戛>取[QV]。
+                                    <br>
+
+                                    [大]雖偶然也會附帶逗點在上，但因為通常並沒有，不想取碼時太費神分辨，應留待打完字才去揀選更好，故會將[大]定義為《聯接字根》。
+                                    <br>
+                                    舉例：<臭>取[B]、<类>取[B]。
+                                    <b>參考：以上《聯接字根》。</b>
+                                    <br>
+
+                                    所謂《相連筆劃》和《聯接字根》略有不同，《相連筆劃》是多層筆劃組成，不是《聯接字根》，只令《普通字塊》聯接成單一個字取碼，但不可以令《圍型必取首碼》失效，聯接成為單一字取碼。
+                                    <br>
+                                    舉例：<幸>取[T]、<業>取[P]、<睪>則取[QT]、<冕>則取[QR]等字。
+                                    <br>
+                                    而《聯接字根》則會令《圍型必取首碼》失效，聯接成為單一字取碼。
+                                    <br>
+                                    舉例：<尊>取[T]、<晁>取[R]等字。
+                                    <br>
+                                    <b>原則上是如果沒有《明顯分離的字塊》，就都算是《相連筆劃》，只取單一碼。</b>
+                                    <br>
+                                    <b>
+                                        <a href="#rnf">回《取碼規定》</a>
+                                    </b>
+                                </li>
+                                <!------------------------------>
+
+                                <!------------------------->
+                                <li>
+                                    <B>左和右兩邊具為斜筆</B>
+                                    ，有撑開下層《字塊》，呈分開形象：
+                                    <br>
+                                    <b>通常多是一些中心空下來的《字塊》，使形成分離的形態。</b>
+                                    <br>
+
+                                    例如：[Z：八]俗稱《八字頭》等。
+                                    <br>
+                                    舉例：<父>取[ZX]、<分>取[ZJ]等字。
+                                    <br>
+
+                                    例如：[A：人]俗稱《人字頭》等。
+                                    <br>
+                                    舉例：<令>取[AD]、<合>取[AO]等字。
+                                    <br>
+
+                                    例如：[B：大]俗稱《大字頭》等。
+                                    <br>
+                                    舉例：<奈>取[BL]、<春>取[BQ]等字。
+                                    <br>
+
+                                    例如：[X：又]俗稱《又字頭》等。
+                                    <br>
+                                    舉例：<產>取[XE]、<蚤>取[XD]等字。
+                                    <br>
+                                <li>
+                                    <B>有由上而下包圍起來的形象</B>
+                                    ：
+                                    <br>
+                                    例如：[M：月]俗稱《帽子頭》。
+                                    <br>
+                                    舉例：<周>取[MO]、<字>取[MT]、<雪>取[ME]等字。
+                                </li>
+
+                                例如：[弋：V]俗稱《弋字頭》等。
+                                <br>
+                                舉例：<感>取[VU]、<載>取[VT]等字。
+                                <br>
+
+                                例如：[Y：夕]俗稱《厂字頭》等。
+                                <br>
+                                舉例：<麽>取[YD]、<居>取[YO]等字。
+                                <br>
+                                留意：
+                                <b>《撇型字塊》位於頂部的最左邊，其右上邊《橫劃字塊》或其它《字塊》，必須「佔據整個頂部」。</b>
+                                <br>
+                                否則會為兩個以上的《字塊》，亦為《間隔分離層》，取右邊《字塊》。舉例：<慰>取[TU]等字。</li>
+                                <br>
+                                <b>特別留意：</b>
+                                《疊型字》中由下而上包圍起來的字塊，還是先取上部份《字塊》。
+                                <br>
+                                舉例：<句>取[JO]、<幽>取[SU]、<叵>則取[UO]、<凶>則取[XU]等字。
+                                <br>
+                                <li>
+                                    <B>帶鉤狀筆劃</B>
+                                    ，《疊型字》中有轉回筆鋒特徵，呈不互相聯繫的景象：
+                                    <br>
+                                    例如：[K：矛]帶鉤字頭等。
+                                    <br>
+                                    舉例：<柔>取[KP]等字。
+                                    <br>
+                                    例如：[V：弋]帶鉤字頭等。
+                                    <br>
+                                    舉例：<昏>取[VQ]、<盛>取[VD]等字。
+                                    <br>
+                                    例如：[J：丁]帶鉤字頭等。
+                                    <br>
+                                    舉例：<包>取[JG]、<召>取[JO]等字。
+                                    <br>
+                                    <b>特别留意：</b>
+                                    [小]、[不]、[水]等筆劃，其中[L-小]統一
+                                    <b>規定為《帶鉤狀筆劃》，屬《間隔分離層》計算。</b>
+                                    <br>
+
+                                    舉例：<尖>取[LB]、<丕>則取[LD]、<否>取[LO]、<丞>取[LD]、<函>取[LU]等字。
+                                    <br>
+
+                                    唯獨[木]、[米]、[禾]、[釆]等[P-木]筆劃。統一
+                                    <b>不視為《帶鈎狀筆劃》。</b>
+                                    <br>
+
+                                    舉例：<杏>取[O]、<李>取[T]、<香>取[Q]、<番>取[Q]、<秀>則取[J]等字。
+                                    <br>
+
+                                    而[求]是有鈎的，更因其右上邊一定附帶有逗點在上，故被定義為《間隔分離層》，則為《必取首碼》。
+                                    <br>
+
+                                    舉例：<裘>取[PV]等字。
+                                    <b>參考：以上《間隔分離層》定義。</b>
+                                </li>
+                            </ol>
+                            <!---====================>。<br>舉例：<>取[]、<>取[]等字。<br>========E=========================--->
+                            <li type="square" id="nfm">
+                                <B>《不取首碼筆劃》</B>
+                                ：
+                                <BR>
+                                原則上如果没有《間隔分離層》，都是《不取筆劃》。
+                                無論看上去是合併或分離，總是不取的筆劃，通常多是逗點。
+                                <br/>
+                            </li>
+                            <ol>
+                                <li>
+
+                                    例如：[丶]、[丷]、[爫]、[十]等筆劃，一點頭或二點頭或三點頭。
+                                    <br>
+                                    舉例：<字>取[MT]、<常>取[MI]、<受>取[MX]、<索>取[ML]、<南>取[MT]等。
+                                </li>
+
+                                <!---------------++++++++++++++++++++++++++++++-------->
+                                <li>
+
+                                    例如：[亠]等《橫型字塊》或[目]等《圍型字塊》，再下層帶有[八：Z]或[人：A]等的《聯接字根》，則不會取本身碼，會取[八：Z]或[人：A]碼。
+                                    <br>
+                                    舉例：<六>取[Z]、<與>取[Z]、<貝>取[Z]、<負>取[Z]、<無>取[N]、<羔>取[N]、<煮>取[N]理由下層是《聯接字根》，只有单一码。
+                                    <br>
+                                    舉例：<舉>取[ZF]、<養>取[AV]、<界>取[QS]理由《围型字块》及[Z：八]《八字頭》是《必取碼》，两码時首码必须是《必取首碼》等。
+                                    <br>
+                                    <br>
+                                    <b>
+                                        返回：
+                                        <a href="#似_4">
+                                            <似類(4)>
+                                        </a>
+                                    </b>
+                                    <br>
+                                </li>
+                                <li>
+                                    <b>原則上如果没有《間隔分離層》，都是《不取筆劃》。</b>
+                                    <br>
+
+                                    就好像底層的《圍型字塊》，它左上角的一撇及一撇相連的筆劃，不論是簡單的一撇，或是非常複雜的《字塊》，都只簡單看底部的《圍型》來取碼，因為《建成中文輸入法》是以字塊的底部來界定分類。
+                                    <br/>
+                                    例如：日、白、百、者、自、首、看、着、等字，其上一撇感覺是相連的不會取，所以都一律取[Q]。既可以避免太多重碼字，更加快了速度，不用輸入兩碼。
+                                    <br>
+
+                                <li type="square">
+
+                                    特別留意：
+                                    <BR>
+                                    統一性取碼，以上情況同樣適用於《圍型》的[口]字等。
+                                    <br>
+                                    例如：石、右、名、君等字，都一律取[O]。
+                                    <br/>
+
+                                    統一性取碼，以上情況同樣適用於《橫型字塊》等。
+                                    <br/>
+                                    舉例：<差>取[C]、<羞>取[E]、<考>取[J]等。
+                            </ol>
+                            <!--===============================================-->
+                            <li type="square">
+
+                                最後重要點是：
+                                <BR>
+                            <li>
+                                <b>《建成中文輸入法》是以象形為主，總體是憑著感覺，無需强記，輸入多了自然學會，絶不會再忘記。</b>
+                                <br>
+                                《建成中文輸入法》有點不拘小節。譬如<大>、<太>、<犬>等字都統一取[大：B]，多一個點少一個點，不會認真去分辨，所以<礻>、<衤>、<小>、<水>、<永>等字都取[小：L]，會以最近似的形態編碼。
+                                <br>
+                                通常附帶在筆劃上的逗點，都不會去理會。
+                                <br>
+                                <!---------------++++++++++++++++++++++++++---------->
+
+                                舉例：<兆>取[R]、<晁>取[R]、<低>取[KV]。
+                                <br>
+                                除非是
+                                <b>相連於最低最後的一筆劃，或是兩個以上的最後的分離筆劃</b>
+                                。
+                                <br>
+                                舉例：<零>取[MD]、<雲>取[MD]、<領>取[DZ]、<冬>取[XS]、<雨>取[MN]等。
+                                <br>
+                            </li>
+                            <li>
+                                在《建成中文輸入法》字典中，往往有一個半個獨特的字，真的不太多個，但郤是令人費盡思量。
+                                <br>
+
+                                主要原因，是國家只有對中文字讀音進行了統一化，但字體郤還未有正式規範，故形態並無統一標準。
+                                <br>
+
+                                譬如：其中最不可思議的有兩個字，是<眾>和<聚>，起碼有三種以上的中文字體，寫法都完全不同，不詳細列舉出了，最後選定為<眾>取[日卜：QK]和<聚>取[又卜：XK]。
+                            </li>
+                            <li>
+
+                                也有些異體字的取碼，譬如：<麥>取[PX]、<望>取[YC]、<片>取[J]、<塑>取[MC]等字，都是要特别留意取码。
+                            </li>
+                            <li>
+
+                                其它譬如：<瓦>、<必>、<帶>的頂部、<流>的右底部，都只出現一次半次，如果取[山：U]，雖則合理，但總覺像欠了一些感覺，故選定為[几：R]。
+                                <br>
+
+                                另外譬如：<母>、<曷>、<毋>等字，總感覺像《圍型字塊》，故選[日：Q]更為合理易記。
+                                <br>
+                                又譬如：<兼>等字，如果取[木：P]碼，雖則亦算合理，但總覺像欠了一些感覺，而且兩直筆為主，呈向下的缺口，故選[廾：H]更為合理易記。
+                            </li>
+                            <li>
+                                中文有很多字，作為《部首》時，型態會改變。譬如<羊>取[F]、<匕>取[U]、<屯>取[G]等字，當為《部首》時會變成<翔>取[YS]、<印>取[VI]、<邨>取[VI]，為了方便初學者「見字打字」，都會跟隨改變取碼。
+                            </li>
+                            <li>
+
+                                還要留意有些相對近似的取碼，譬如：<巾>、<本>、<承>等字，都是以「底部」較低筆劃為主，全是《直筆》取碼。<巾>不取[月：M]應取[中：I]、<本>不取[木：P]因直筆最先接觸是橫劃，應取[十：T]、<承>不取[小：L]同上理由，應取[牛：F]。
+                            </li>
+
+                            <br>
+                            <b>
+                                (如有錯漏或不認同者，請指教以作更正。)
+                                <a href="#top">回《頂部》</a>
+                            </b>
+                    </div>
+                    </li>
+                    </ol>
+                    </ul>
+
+                    <div style="margin:0; padding:0; border:0;" class="container">
+                        <h2 style="text-align:center; padding:0.1em; background-color:#009900; color:white;">展望</h2>
+                        <div style="font-size:1.4em; font-weight:normal; background-color:#90ee90; color:black; margin:0px; padding:4px;">
+                            <ul>
+                                <li type="square">
+                                《建成中文輸入法》如果獲得大眾認同，我希望能盡快推出《實體應用程式》，供大家於網站免費下載，在個人電腦及手機中使用。
+                                </li>
+                                <li type="square">
+                                《建成中文輸入法》希望能配備《智慧聯想選取字詞》程式，就如《拼音輸入法》般，它雖有更大量的重碼字，亦能快速輸入中文。
+                                </li>
+                                <li type="square">
+                                《建成中文輸入法》本「繁體版」常用字約為5450個，而「簡體版」常用字約為5160個。希望能增添另一個《建成偏僻字輸入》程式，令偏僻字同樣可以用相同的編碼輸入，但不會影響到常用字的輸入速度。
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--===============================A===============--->
+
+                    <div class="w3-bar w3-center">
+                        <div class="w3-table-all w3-centered">
+                            <h4 class="w3-light-green">
+                                版權所有 不准轉載
+                                <br>
+                                Copyright &copy 2025 All Rights Reserved
+                            </h4>
+                        </div>
+                    </div>
+</body>
+</html>
+</tbody>
+</table>
+</div>
+</body>
+</html>
